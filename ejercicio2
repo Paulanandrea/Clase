@@ -1,0 +1,67 @@
+git  config --global user.name "[paula]
+
+git config --global user.email "[pandalea1206@gmail.com]"
+
+git config --global color.ui auto
+
+git init 
+
+git clone
+
+https://github.com/asalber/libro-git.git
+
+cd libro-git
+
+git reset --hard 8c808
+
+git remote remove origin
+
+Ejercicio 1
+
+git log
+
+mkdir capitulos
+
+cd capitulos
+
+echo "Git es un sistema de control de versiones ideado por Linus Torvalds" > capitulos1.txt
+
+git add capitulos/capitulos1.txt
+
+git commit -m "Añadido capítulo 1."
+
+git log
+
+Ejercicio 2
+
+echo "El flujo de trabajo  básico con Git consiste en: 1- Hacer cambios en el repositorio. 2- Añadir los cambios a la zona de intercambio temporal. 3- Hacer un commit de los cambios" > capitulo2.txt
+
+git add .
+
+git commit -m "Añadido el capitulo 2"
+
+git diff HEAD~2..HEAD
+
+Ejercicio 3
+
+echo "Git permite la creación de ramas lo que permite tener distintas versiones del mismo proyecto y trabajar de manera simultanea en ellas" > capitulos3.txt
+
+git add .
+
+git commit -m "Añadido el capitulo 3"
+
+git log
+
+git diff b6be c95b
+
+Ejercicio 4
+
+cd ..
+
+echo "Capitulo 5: Conceptos avanzados" > indice.txt
+
+git add .
+
+git commit -m "Añadido el capitulo 5 al Índice"
+
+git annotate indice.txt
